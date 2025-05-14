@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: tlc-business-app
+    env: python
+    buildCommand: pip install -r TLCBusinessTransformation/requirements.txt
+    startCommand: python TLCBusinessTransformation/app.py
+    repo: https://github.com/RuaraidhTLC/TLCBusinessSolutions
+    branch: main
+    rootDir: TLCBusinessTransformation
